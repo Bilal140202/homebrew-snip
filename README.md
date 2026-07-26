@@ -42,8 +42,8 @@ See the [main repo](https://github.com/Bilal140202/snip) for full docs.
 | macOS | Apple Silicon (aarch64) | ✅ |
 | macOS | Intel (x86_64) | ✅ |
 | Linux | x86_64 | ✅ |
-| Linux | aarch64 | ❌ (build from source: `cargo install snipcmd`) |
-| Windows | x86_64 | ❌ (use `cargo install snipcmd` or download from [releases](https://github.com/Bilal140202/snip/releases)) |
+| Linux | aarch64 | ❌ (build from source: `cargo install snipit`) |
+| Windows | x86_64 | ❌ (use `cargo install snipit` or download from [releases](https://github.com/Bilal140202/snip/releases)) |
 
 ## Formula source
 
