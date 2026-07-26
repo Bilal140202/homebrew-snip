@@ -1,10 +1,10 @@
 class Snip < Formula
   desc "Project-scoped command snippets with built-in fuzzy finder"
   homepage "https://github.com/Bilal140202/snip"
-  url "https://github.com/Bilal140202/snip/releases/download/v0.3.1/snip-x86_64-macos"
-  sha256 "ec383712deea95cffe71a36ac36cc5a3fdb3763f2e755b6490b32396e76dbf92"
+  url "https://github.com/Bilal140202/snip/releases/download/v0.3.4/snip-x86_64-macos"
+  sha256 "437b09535c8117a2a634433af8951b7eacff2106e226479ad146ada0308c6156"
   license "MIT"
-  version "0.3.1"
+  version "0.3.4"
 
   # Livecheck: look at the latest GitHub release tag.
   livecheck do
@@ -14,21 +14,22 @@ class Snip < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Bilal140202/snip/releases/download/v0.3.1/snip-aarch64-macos"
-      sha256 "81865fc671e6c85d9e3dce04ae66adb0c587ec365001c10d26dcb3c4f0825d0c"
+      url "https://github.com/Bilal140202/snip/releases/download/v0.3.4/snip-aarch64-macos"
+      sha256 "bad1c5d67b42fddc31aebccd106ae07f98cc77844cbe69a7cbbedb42b5da0ada"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Bilal140202/snip/releases/download/v0.3.1/snip-x86_64-linux"
-      sha256 "a0225c8f6825bc6b91005a0719e1d467b4bca19080b5130c491e14dd85be709b"
+      url "https://github.com/Bilal140202/snip/releases/download/v0.3.4/snip-x86_64-linux"
+      sha256 "4ab1f4d53eade682c4d8b9cbabeea3531833d3d83208bf08dda301662df4fe12"
     end
   end
 
   # Pre-built binary release — no build dependencies needed.
   def install
     # The downloaded file IS the binary (no tarball). Rename it to `snip`.
+    # Only one of these files will exist, depending on the platform.
     bin.install "snip-x86_64-macos" => "snip" if File.exist?("snip-x86_64-macos")
     bin.install "snip-aarch64-macos" => "snip" if File.exist?("snip-aarch64-macos")
     bin.install "snip-x86_64-linux" => "snip" if File.exist?("snip-x86_64-linux")

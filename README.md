@@ -49,6 +49,8 @@ See the [main repo](https://github.com/Bilal140202/snip) for full docs.
 
 The formula is at [`Formula/snip.rb`](./Formula/snip.rb). It downloads the pre-built binary from the latest GitHub release, so installation is fast (no Rust toolchain needed).
 
+Current formula version: **v0.3.4**
+
 ## Issues
 
 Please report issues at the [main repo](https://github.com/Bilal140202/snip/issues), not here.
