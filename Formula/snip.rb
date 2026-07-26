@@ -1,10 +1,10 @@
 class Snip < Formula
   desc "Project-scoped command snippets with built-in fuzzy finder"
   homepage "https://github.com/Bilal140202/snip"
-  url "https://github.com/Bilal140202/snip/releases/download/v0.3.4/snip-x86_64-macos"
-  sha256 "437b09535c8117a2a634433af8951b7eacff2106e226479ad146ada0308c6156"
+  url "https://github.com/Bilal140202/snip/releases/download/v0.3.5/snip-x86_64-macos"
+  sha256 "99278cb8d148809fd2e75479d0ea37420ad6b1b46153f19b1bce1ba4fd2830f7"
   license "MIT"
-  version "0.3.4"
+  version "0.3.5"
 
   # Livecheck: look at the latest GitHub release tag.
   livecheck do
@@ -14,15 +14,15 @@ class Snip < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Bilal140202/snip/releases/download/v0.3.4/snip-aarch64-macos"
-      sha256 "bad1c5d67b42fddc31aebccd106ae07f98cc77844cbe69a7cbbedb42b5da0ada"
+      url "https://github.com/Bilal140202/snip/releases/download/v0.3.5/snip-aarch64-macos"
+      sha256 "12b7050d9f3c9bddbaccfcffaa661adff13e14750fc6bedd058940db3a6201df"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Bilal140202/snip/releases/download/v0.3.4/snip-x86_64-linux"
-      sha256 "4ab1f4d53eade682c4d8b9cbabeea3531833d3d83208bf08dda301662df4fe12"
+      url "https://github.com/Bilal140202/snip/releases/download/v0.3.5/snip-x86_64-linux"
+      sha256 "429f3159e60b3ee76a61924f6bbf002d496adb62c38f434ac6951c419c45704b"
     end
   end
 
